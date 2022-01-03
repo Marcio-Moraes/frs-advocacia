@@ -1,0 +1,845 @@
+:root{
+    --cor-bg-header: #FAF6F3;
+    --branco-1: #fff;
+    --cinza-1: #ECEAEA;
+    --ocre: #B1985E;
+    --verde-escuro: #1C281B;
+    --verde-medio: #3A5D49;
+    --verde-destaque: #007934;
+    --fonte-pro: 'Source Sans Pro', sans-serif;
+    --fonte-serif: 'Source Serif Pro', serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte-pro);
+}
+.caixa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+	max-width: 1260px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.error{
+    background-color: #f00;
+    padding: 3px;
+    color: var(--branco-1);
+    font-size: 12px;
+    font-family: var(--fonte-pro);
+    font-weight: 400;
+}
+.menu_mobile_icon{
+    display: none;
+}
+
+/* header */
+.header{
+    background-color: var(--cor-bg-header);
+    min-height: 115px;
+    width: 100%;
+    border: solid 2px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.div_logo_topo{
+    width: 380px;
+    box-sizing: border-box;
+}
+.div_logo_topo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.div_logo_topo img{
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.div_logo_topo img:hover{
+    padding: 10px;    
+}
+.div_menu_topo{
+    height: 115px;
+}
+.div_menu_topo ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    list-style: none;
+}
+.div_menu_topo ul a{
+    color: var(--verde-medio);
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 30px;
+}
+.div_menu_topo ul a:hover{
+    color: var(--verde-destaque);
+}
+
+/* section topo home */
+.section_topo_home{
+    background-color: var(--verde-medio);
+    min-height: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.div_chamada_top{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 4px var(--ocre);
+    width: 100%;
+    max-width: 460px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.div_chamada_top span{
+    color: var(--branco-1);
+    font-family: var(--fonte-serif);
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:4px 12px;
+}
+
+.div_agende_visita{
+    background-color: var(--ocre);
+    height: 133px;
+    width: 306px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.div_agende_visita h2,
+.div_agende_visita a{
+    color: var(--branco-1);
+    font-family: var(--fonte-serif);    
+    width: 190px;
+}
+.div_agende_visita h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1em;
+}
+.div_agende_visita a{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.section_nossa_historia_home{
+    padding: 160px 10px;
+    background-color: var(--cor-bg-header);
+    box-sizing: border-box;
+}
+.div_content_nossa_historia{
+    flex: 1;
+    padding: 10px;
+}
+.div_item_historia{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 30px 10px 10px;
+}
+.div_item_historia h2{
+    font-family: var(--fonte-serif);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--verde-escuro);
+    padding-right: 20px;
+    width: 120px;
+}
+.div_item_historia p{
+    font-family: var(--fonte-pro);
+    flex: 1;
+    box-sizing: border-box;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.barra_item_historia{
+    content: "";
+    width: 4px;
+    height: 70px;
+    background-color: var(--ocre);
+    display: block;
+    margin-right: 30px;
+}
+
+.div_coluna_destaque_nossa_historia{
+    width: 100%;
+    max-width: 380px;
+    box-sizing: border-box;
+}
+.texto_destaque_nossa_historia{
+    width: 100%;
+    background-color: var(--verde-destaque);
+    color: var(--branco-1);
+    padding: 22px;
+    box-sizing: border-box;
+}
+.texto_destaque_nossa_historia p{
+    font-size: 24px;
+    font-family: var(--fonte-serif);
+    font-style: italic;
+    padding: 10px 30px;
+}
+.div_imagem_coluna_destaque{
+    position: relative;
+    display: flex;
+}
+.div_imagem_coluna_destaque img{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* página serviços */
+.section_topo_servicos{
+    background-color: var(--ocre);
+    width: 100%;
+    min-height: 224px;
+    box-sizing: border-box;
+}
+
+.div_title_topo_servicos{
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    align-items: flex-end;
+    min-height: 180px;
+}
+.div_title_topo_servicos h1{
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--cor-bg-header);
+    font-family: var(--fonte-serif);
+    font-weight: 700;
+    font-size: 36px;
+    max-width: 220px;
+    line-height: 38px;
+}
+.div_descricao_servicos_topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px;
+    max-width: 800px;
+    min-height: 200px;
+}
+.div_descricao_servicos_topo p{
+    color: var(--cor-bg-header);
+    font-family: var(--fonte-serif);
+    line-height: 30px;
+    font-size: 24px;
+}
+.section_servicos{
+    padding: 280px 10px 0 10px;
+}
+.section_servicos .caixa{
+    position: relative;
+    justify-content: flex-end;
+}
+.div_agende_uma_consulta_servicos{
+    max-width: 800px;
+    box-sizing: border-box;
+}
+.div_title_consulta_servicos{
+    background-color: var(--verde-destaque);
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.div_title_consulta_servicos h2{
+    color: var(--branco-1);
+}
+.div_title_consulta_servicos a{
+    color: var(--branco-1);
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.div_carrossel_servicos{
+    background-color: var(--verde-escuro);
+    width: 100%;
+    max-width: 620px;
+    box-sizing: border-box;
+    padding: 40px 60px;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    min-height: 580px;
+}
+.div_carrossel_servicos h3,
+.div_carrossel_servicos p{
+    color: var(--branco-1);
+}
+.div_carrossel_servicos h3{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-family: var(--fonte-serif);
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 30px;
+}
+.div_carrossel_servicos p{
+    margin-bottom: 60px;
+    font-family: var(--fonte-serif);
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 400;
+}
+.div_img_consulta_servicos_bg{
+    width: 100%;
+    box-sizing: border-box;
+}
+.div_img_consulta_servicos_bg img{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Página Serviços Lista */
+.section_content_topo_servicos_pg{
+    margin-top: -140px;
+}
+.div_content_topo_servicos_pg{
+    width: 100%;
+    max-width: 829px;
+    min-height: 280px;
+    box-sizing: border-box;
+    background-color: var(--verde-escuro);
+    padding: 40px 80px;
+}
+.div_content_topo_servicos_pg h1{
+    color: var(--branco-1);
+    font-family: var(--fonte-serif);
+    font-weight: 700;
+    font-size: 36px;
+    width: 120px;
+    margin-bottom: 12px;
+    line-height: 35px;
+}
+.div_content_topo_servicos_pg p{
+    font-family: var(--fonte-serif);
+    font-weight: 400;
+    color: var(--branco-1);
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.section_content_servicos_pg{
+    padding: 140px 10px 80px 10px;
+}
+.section_content_servicos_pg .caixa{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.div_item_servicos{
+    width: 100%;
+    max-width: 410px;
+    min-height: 174px;
+    box-sizing: border-box;
+    border: solid 2px var(--ocre);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.div_item_servicos p{
+    font-family: var(--fonte-pro);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--verde-escuro);
+    text-align: center;
+    width: 100%;
+    max-width: 288px;
+    margin-bottom: 18px;
+}
+.btn_item_servicos{
+    background-color: var(--ocre);
+    color: var(--branco-1);
+    width: 172px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--fonte-serif);
+    font-weight: 700;
+    font-size: 14px;    
+}
+.btn_item_servicos:hover{
+    background-color: var(--verde-medio);
+}
+.div_btn_plus{
+    background-image: url('../images/bg_plus.png');
+    width: 58px;
+    height: 53px;    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.div_btn_plus:hover span{
+    color: var(--branco-1);
+}
+.div_btn_plus span{
+    padding: 1px 10px;
+    color: #274433;
+    font-weight: var(--fonte-pro);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* página equipe */
+.section_topo_equipe_pg{
+    padding: 40px 10px;
+}
+.section_topo_equipe_pg h1{
+    color: var(--ocre);
+    font-size: 36px;
+    font-family: var(--fonte-serif);
+    font-weight: 600;    
+}
+.section_equipe_socios .caixa{
+    flex-wrap: wrap;
+}
+.div_item_socio_equipe{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.div_img_socio_equipe{
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;    
+}
+.div_img_socio_equipe img{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.div_descricao_socio_equipe{
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 80px;
+}
+.div_descricao_socio_equipe span{
+    color: var(--ocre);
+    font-family: var(--fonte-pro);
+    font-size: 18px;
+    font-weight: 700;
+}
+.div_descricao_socio_equipe h2{
+    color: var(--verde-escuro);
+    font-family: var(--fonte-pro);
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.div_descricao_socio_equipe p{
+    font-family: var(--fonte-pro);
+    color: var(--verde-escuro);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.idiomas_socio{
+    margin: 30px 0;
+}
+.idiomas_socio span{
+    font-family: var(--fonte-serif);
+    color: var(--verde-escuro);
+    font-size: 14px;
+    font-weight: 900;
+}
+.idiomas_socio p{
+    font-family: var(--fonte-pro);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--verde-escuro);
+}
+.linkeding_saiba_mais_socio{
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin: 30px 0;
+}
+.linkeding_saiba_mais_socio img{
+    max-width: 40px;
+    padding-right: 20px;
+}
+.linkeding_saiba_mais_socio a{
+    color: var(--verde-destaque);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: var(--fonte-pro);
+    font-weight: 700;
+    text-decoration: none;
+}
+/* Página Contato */
+.section_contato_pg{
+    display: flex;
+    width: 100%;
+}
+.div_coluna_contato_map,
+.div_coluna_contato_form{
+    width: 100%;
+    min-height: 120vh;
+    box-sizing: border-box;
+}
+.div_contato_endereco{
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div_contato_endereco h1{
+    color: var(--ocre);
+    font-family: var(--fonte-serif);
+    font-size: 36px;
+    font-weight: 600;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 22px;
+}
+.div_contato_endereco p{
+    font-family: var(--fonte-serif);
+    color: var(--branco-1);
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 22px;
+}
+.div_contato_endereco a{
+    color: var(--branco-1);
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+}
+.div_coluna_contato_map{
+    background-color: var(--verde-medio);
+}
+.div_contato_social_media_map{
+    background-color: var(--verde-escuro);    
+    box-sizing: border-box;
+    padding: 30px;
+}
+.div_item_map{
+    display: flex;
+    justify-content: center;
+}
+.div_item_map img{
+    max-width: 100%;
+    margin-top: -120px;
+}
+.div_redes_sociais_contato{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    min-height: 120px;
+    box-sizing: border-box;
+    color: var(--branco-1);
+    margin: 10px auto;
+}
+.div_redes_sociais_contato p{
+    font-family: var(--fonte-serif);
+}
+.redes_sociais_contato{
+    display: flex;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.redes_sociais_contato img{
+    max-height: 30px;
+}
+.redes_sociais_contato a{    
+    margin: 0 10px;
+}
+.div_coluna_contato_form{
+    background-color: var(--ocre);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+    box-sizing: border-box;
+}
+
+.div_chamada_form h2{
+    margin: 0;
+    font-family: var(--fonte-serif);
+    font-weight: 900;
+    font-size: 36px;  
+    color: var(--verde-escuro);
+}
+.div_chamada_form h3{
+    margin-bottom: 10px;
+    font-family: var(--fonte-serif);
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--verde-escuro);
+}
+.div_form_contato{
+    width: 100%;
+    max-width: 456px;    
+    box-sizing: border-box;
+}
+.div_form_contato form,
+.div_item_form_contato,
+.div_item_form_contato input,
+.div_item_form_contato textarea{
+    width: 100%;    
+    box-sizing: border-box;
+    font-family: var(--fonte-pro);
+    font-weight: 400;
+    color: #463202;
+}
+.div_item_form_contato input,
+.div_item_form_contato textarea{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #CEC5AE;
+    color: #000;
+    outline: 0;
+}
+.btn_form_contato{
+    background-color: var(--verde-escuro);
+    color: var(--branco-1);
+    width: 87px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 900;
+    font-size: 15px;
+}
+.btn_form_contato:hover{
+    background-color: var(--verde-medio);
+}
+
+/* footer */
+.footer{
+    background-color: var(--cinza-1);
+    padding: 40px 10px;
+    width: 100%;
+    min-height: 208px;
+    box-sizing: border-box;    
+}
+.div_endereco_footer{
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+    max-width: 380px;
+}
+.div_endereco_footer p{
+    font-family: var(--fonte-serif);
+    color: var(--verde-medio);
+}
+.div_endereco_footer > a{
+    color: var(--verde-medio);
+    margin: 10px 0;
+    display: inline-block;
+    text-decoration: none;
+}
+.div_endereco_footer > a:hover{
+    color: var(--verde-destaque);
+}
+
+.div_logo_footer{
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.div_logo_footer a{
+    padding: 0;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+.div_logo_footer a:hover{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.div_logo_footer img{
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+@media(max-width: 920px){
+    .div_logo_topo{
+        max-width: 180px;
+    }
+    .div_menu_topo{
+        display: flex;
+        align-items: center;
+    }
+    .div_menu_topo ul{
+        display: none;
+    }
+    .div_menu_topo .menu_mobile_icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 30px;
+        cursor: pointer;
+    }
+    .menu_mobile_icon:hover .div_barra_menu_mobile{
+        background-color: var(--verde-destaque);
+    }
+    .div_barra_menu_mobile{
+        width: 40px;
+        height: 6px;
+        background-color: var(--verde-medio);
+    }
+    .section_nossa_historia_home .caixa{
+        flex-direction: column;
+    }
+
+    .div_imagem_coluna_destaque{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .div_item_historia{
+        flex-direction: column;
+
+    }
+
+    /* servicos mobile */
+    .section_topo_servicos .caixa{
+        flex-direction: column;
+    }
+    .div_title_topo_servicos h1{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .div_descricao_servicos_topo p{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .section_servicos{
+        padding: 40px 10px;
+    }
+    .section_servicos .caixa{
+        flex-direction: column;
+    }    
+    .div_carrossel_servicos{
+        position: relative;        
+        bottom: 0;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .div_carrossel_servicos h3{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .div_carrossel_servicos p{
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    /* página equipe mobile */
+    .div_item_socio_equipe{
+        flex-direction: column;
+    }
+    .div_img_socio_equipe{
+        margin: auto;
+    }
+
+    /* página contato */
+    .section_contato_pg{
+        flex-direction: column;
+    }
+
+    .div_redes_sociais_contato{
+        flex-direction: column;
+        align-items: center;
+    }
+    .div_redes_sociais_contato p{
+        margin-top: 30px;
+        margin-bottom: 22px;
+    }        
+    .div_coluna_contato_form{
+        padding: 30px;
+    }
+    .div_chamada_form h2,        
+    .div_chamada_form h3{
+        font-size: 32px;
+    }
+    /* footer mobile */
+    .footer .caixa{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .div_logo_footer{
+        max-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_topo_home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    .div_content_nossa_historia{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .div_item_historia{
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .div_item_historia h2{
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+    .barra_item_historia{
+        width: 70px;
+        height: 4px;
+        margin: 5px auto 20px auto;
+    }
+}

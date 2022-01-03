@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faoro Reis Sztajnbok - FRS - Advocacia</title>
+
+
+    <!-- Fontes Source Sans Pro | Source Serif Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Source+Serif+Pro:wght@300;400;600;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+
+
+    <!-- menu mobile css -->
+    <link rel="stylesheet" href="assets/css/menu_mobile.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="caixa">
+            <div class="div_logo_topo">
+                <a href="./">
+                    <img src="assets/images/logo-frs-advocacia.png" alt="">
+                </a>
+            </div>
+
+            <div class="div_menu_topo">
+                <ul>
+                    <li>
+                        <a href="./">Home</a>
+                    </li>
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="equipe.html">Equipe</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- Lista de Menu Mobile -->
+                <div id="myNav" class="overlay">
+
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                        <a href="./" onclick="closeNav()">Home</a>
+                        <a href="servicos.html" onclick="closeNav()">Serviços</a>
+                        <a href="equipe.html" onclick="closeNav()">Equipe</a>
+                        <a href="contato.html" onclick="closeNav()">Contato</a>
+                    </div>
+
+                </div>
+
+                <div class="menu_mobile_icon" onclick="openNav()">
+                    <div class="div_barra_menu_mobile"></div>
+                    <div class="div_barra_menu_mobile"></div>
+                    <div class="div_barra_menu_mobile"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section_contato_pg">
+        <div class="div_coluna_contato_map">
+            <div class="div_contato_endereco">
+                <h1>Contato</h1>
+
+                <p>Av. Nilo Peçanha, 50 – 20º andar Grupo 2013 - CEP 20020-100 |</p>
+
+                <p>Centro | Rio de Janeiro – RJ</p>
+
+                <a href="" class="">(21) 2220-8221</a>
+            </div>
+            <div class="div_contato_social_media_map">
+                <div class="div_item_map">
+                    <img src="assets/images/mapa.png" alt="" />
+                </div>
+                <div class="div_redes_sociais_contato">
+                    <p>Siga as nossas redes sociais!</p>
+
+                    <ul class="redes_sociais_contato">
+                        <li>
+                            <a href="" target="_blank">
+                                <img src="assets/images/linkedin-icon.png" alt="">
+                            </a>
+                            <a href="" target="_blank">
+                                <img src="assets/images/facebook-icon.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="div_coluna_contato_form">
+            <div class="div_chamada_form">
+                <h2>O que você deseja resolver?</h2>
+                <h3>Vamos conversar!</h3>
+            </div>
+
+            <div class="div_form_contato">
+                <form method="post" action="" class="mvalidador">
+                    <div class="div_item_form_contato">
+                        <input type="text" placeholder="Nome" data-rules="required|min=2" />
+                    </div>
+                    <div class="div_item_form_contato">
+                        <input type="text" placeholder="Telefone" data-rules="required" />
+                    </div>
+                    <div class="div_item_form_contato">
+                        <input type="text" placeholder="Email" data-rules="required|min=2|email" />
+                    </div>
+                    <div class="div_item_form_contato">
+                        <textarea placeholder="Mensagem" name="" id="" cols="30" rows="4"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar" class="btn_form_contato">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="assets/js/mvalidador.js"></script>
+<script src="assets/js/menu_mobile.js"></script>
+
+</html>
