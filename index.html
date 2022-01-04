@@ -17,6 +17,7 @@
 
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- menu mobile css -->
     <link rel="stylesheet" href="assets/css/menu_mobile.css" />
@@ -29,7 +30,8 @@
         <div class="caixa">
             <div class="div_logo_topo">
                 <a href="./">
-                    <img src="assets/images/logo-frs-advocacia.png" alt="">
+                    <img src="assets/images/logo-frs-advocacia.png" alt=""
+                        class="animate__animated animate__fadeInDown">
                 </a>
             </div>
 
@@ -88,14 +90,14 @@
 
         <div class="div_agende_visita">
             <h2>Agende uma visita</h2>
-            <a href="">Clique aqui</a>
+            <a href="contato.html">Clique aqui</a>
         </div>
     </section>
     <section class="section_nossa_historia_home">
         <div class="caixa">
             <div class="div_content_nossa_historia">
                 <div class="div_item_historia">
-                    <h2>Nossa História</h2>
+                    <h2 class="animate__animated animate__fadeInLeft">Nossa História</h2>
                     <span class="barra_item_historia"></span>
                     <p>
                         O escritório Faoro, Reis & Sztajnbok Advogados (FRS), fundado em 2017, é fruto da união de três
@@ -104,14 +106,14 @@
                     </p>
                 </div>
                 <div class="div_item_historia">
-                    <h2>Quem somos</h2>
+                    <h2 class="animate__animated animate__fadeInLeft">Quem somos</h2>
                     <span class="barra_item_historia"></span>
                     <p>
                         Além dos sócios fundadores, o escritório conta atualmente com uma equipe de dez colaboradores.
                     </p>
                 </div>
                 <div class="div_item_historia">
-                    <h2>Onde estamos</h2>
+                    <h2 class="animate__animated animate__fadeInLeft">Onde estamos</h2>
                     <span class="barra_item_historia"></span>
                     <p>
                         Com unidades no Rio de Janeiro e em São Paulo, o FRS atua individualmente ou em parceria com
@@ -120,7 +122,7 @@
                     </p>
                 </div>
                 <div class="div_item_historia">
-                    <h2>Por que nós?</h2>
+                    <h2 class="animate__animated animate__fadeInLeft">Por que nós?</h2>
                     <span class="barra_item_historia"></span>
                     <p>
                         Aliando experiências diversas e complementares dos seus sócios fundadores, o FRS tem como
@@ -140,7 +142,7 @@
                 <div class="div_imagem_coluna_destaque">
                     <img src="assets/images/frs-faoro-reis-sztajnbok.png" alt="">
 
-                    <div class="div_btn_plus">
+                    <div class="div_btn_plus" id="div_btn_plus_abre_modal">
                         <span>+</span>
                     </div>
                 </div>
@@ -167,8 +169,24 @@
             </div>
         </div>
     </footer>
+
+    <div id="modalhome">
+        <div class="div_content_modal">
+            <div class="div_btn_fechar_modal" id="div_btn_fechar_modal_home">
+                x
+            </div>
+            <div class="div_img_modal">
+                <img src="assets/images/escritorio_rio_de_janeiro_faoro_reis_zstajnbok.png"
+                    alt="Nosso escritório no Largo da Carioca, Rio de janeiro." />
+            </div>
+            <div class="div_descricao_modal">
+                <h2>Nosso escritório no Largo da Carioca, Rio de janeiro.</h2>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="assets/js/menu_mobile.js"></script>
+<script src="assets/js/modal.js"></script>
 
 </html>
