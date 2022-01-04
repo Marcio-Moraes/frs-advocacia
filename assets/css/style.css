@@ -36,6 +36,76 @@
     display: none;
 }
 
+/* Modal Home Escritorio */
+#modalhome{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(255,255,255,.6);
+    box-sizing: border-box;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 0;
+    transition: 0.9s;
+}
+#modalhome.addmodal{
+    display: flex !important;
+    opacity: 1 !important;
+    
+}
+.div_content_modal{
+    width: 100%;
+    max-width: 620px;
+    box-sizing: border-box;
+    position: relative;
+}
+.div_btn_fechar_modal{
+    background-color: var(--verde-destaque);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco-1);
+    font-weight: 600;
+    font-size: 22px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    cursor: pointer;
+}
+.div_btn_fechar_modal:hover{
+    background-color: var(--ocre);
+    color: var(--verde-escuro);
+}
+.div_img_modal,
+.div_img_modal img{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.div_img_modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_descricao_modal{
+    background-color: var(--verde-destaque);
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.div_descricao_modal h2{
+    color: var(--branco-1);
+    font-size: 18px;
+    font-weight: 600;
+}
+
 /* header */
 .header{
     background-color: var(--cor-bg-header);
